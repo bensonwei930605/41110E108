@@ -1,0 +1,13 @@
+7.應用層 Application Layer (提供為應用軟體而設計的介面，以設定與另一應用軟體之間的通訊)
+6.表現層 Presentation Layer (把數據轉換為能與接收者的系統格式相容並適合傳輸的格式)
+5.會議層 Session Layer (負責在數據傳輸中設定和維護電腦網路中兩台電腦之間的通訊連接)
+4.傳輸層 Transport Layer (把傳輸表頭（TH）加至資料以形成封包。傳輸表頭包含了所使用的協定等傳送資訊) 
+3.網路層 Network Layer (決定數據的路徑選擇和轉寄，將網路表頭（NH）加至數據包，以形成封包)
+2.資料連結層 Data Link Layer (負責網路尋址、錯誤偵測和改錯)
+1.實體層 Physical Layer  (它負責管理電腦通訊裝置和網路媒體之間的互通)
+
+hub是在實體層 (Physical Layer)
+網絡交換機可以在OSI第 2 層（數據鏈路層）或第 3 層（網絡層）運行
+路由器運行在 OSI 模型的第三層
+OSI 模型的第 4 層協調系統之間的通信
+POXY 會議層 Session Layer
