@@ -1,3 +1,5 @@
+作業系統的功能: 1.提供使用者簡易的操作環境 2.監控整個程式的執行過程 3.調配程式使用各種電腦資源 4.檔案管理 5.記憶體管理.
+開機程序:BIOS-MBR-Linux Loader-kernel-shell-login-inittab-init
 7.應用層 Application Layer (提供為應用軟體而設計的介面，以設定與另一應用軟體之間的通訊)
 6.表現層 Presentation Layer (把數據轉換為能與接收者的系統格式相容並適合傳輸的格式)
 5.會議層 Session Layer (負責在數據傳輸中設定和維護電腦網路中兩台電腦之間的通訊連接)
@@ -11,3 +13,35 @@ hub是在實體層 (Physical Layer)
 路由器運行在 OSI 模型的第三層
 OSI 模型的第 4 層協調系統之間的通信
 POXY 會議層 Session Layer
+
+HTTPS 全名 超文本傳輸安全協定，那個 S 就是 Secure 的意思；
+HTTPS 透過 HTTP 進行通訊，但通訊過程使用 SSL/TLS 進行加密，藉由類似於前述的加密方式，在 HTTP 之上定義了相對安全的資料傳輸方法。
+HyperText Transfer Protocol (超文本傳輸協定):是一種用於分佈式、協作式和超媒體訊息系統的應用層協定。HTTP是全球資訊網的數據通信的基礎。
+
+簡述底下傳輸層協定(英文全名與簡單功能說明:
+                        TCP             vs                                            UDP
+可靠性                  可靠                                                         不可靠
+速度                    慢                                                             快
+傳輸方式          封包按順序傳輸                                                  封包以串流方式傳輸
+錯誤檢查與修正           有                                                             無
+壅塞控制                 有                                                             無
+確認                     有                                                           只有檢查碼
+適用服務    要求可靠傳輸的服務，例如電子郵件、網頁瀏覽、檔案傳輸                即時服務，例如串流媒體、網路電話、網路遊戲
+
+Unreliable vs Reliable
+不可靠（Unreliable): 無法保證信息或數據包的抵達順序或因網絡環境的丟失但傳輸速度非常
+可靠（Reliable）:可以保證數據傳輸依然完好,數據包發送順序與抵達順序相同。
+
+TCP three-way handshake 三項交握: 
+三向交握 (Three-way Handshake)， 是其建立虛擬連線 (virtual connection) 的方式。
+又稱為 三向式握手、三路交握 …，其實就是 三次訊息的交換。
+ 
+TCP syn flood attack:
+1.使用者端透過傳送SYN同步（synchronize）資訊到伺服器要求建立連線。
+2.伺服器透過響應使用者端SYN-ACK以抄收（acknowledge）請求
+3.使用者端答應ACK，連線隨之建立
+這即是所謂TCP三向交握，並且這是每個使用TCP傳輸協定建立連線的基礎
+
+簡述底下網路層協定(英文全名與簡單功能說明):
+IP:Internet Protocol Address(網際協定位址)是網際協定中用於標識傳送或接收資料報的裝置的一串數字。
+ICMP:Internet Control Message Protocol(網際控制訊息協定:在主機與路由器之間傳遞控制信息
