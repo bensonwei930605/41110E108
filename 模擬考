@@ -46,4 +46,4 @@ TCP syn flood attack:
 
 簡述底下網路層協定(英文全名與簡單功能說明):
 IP:Internet Protocol Address(網際協定位址)是網際協定中用於標識傳送或接收資料報的裝置的一串數字。
-ICMP:Internet Control Message Protocol(網際控制訊息協定:在主機與路由器之間傳遞控制信息
+ICMP:Internet Control Message Protocol(網際控制訊息協定:在主機與路由器之間傳遞控制信息).
