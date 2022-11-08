@@ -1,0 +1,83 @@
+簡述作業系統的功能:作業系統的功能: 
+提供使用者簡易的操作環境 2.監控整個程式的執行過程 3.調配程式使用各種電腦資源 4.檔案管理 5.記憶體管理.
+
+簡述開機程序（boot process）:
+開機程序:BIOS-MBR-Linux Loader-kernel-shell-login-inittab-init
+
+OSI 模型與TCP/IP protocal suite
+OSI有七層?簡述其功能:
+7.應用層 Application Layer (提供為應用軟體而設計的介面，以設定與另一應用軟體之間的通訊)
+6.表現層 Presentation Layer (把數據轉換為能與接收者的系統格式相容並適合傳輸的格式)
+5.會議層 Session Layer (負責在數據傳輸中設定和維護電腦網路中兩台電腦之間的通訊連接)
+4.傳輸層 Transport Layer (把傳輸表頭（TH）加至資料以形成封包。傳輸表頭包含了所使用的協定等傳送資訊) 
+3.網路層 Network Layer (決定數據的路徑選擇和轉寄，將網路表頭（NH）加至數據包，以形成封包)
+2.資料連結層 Data Link Layer (負責網路尋址、錯誤偵測和改錯)
+1.實體層 Physical Layer  (它負責管理電腦通訊裝置和網路媒體之間的互通)
+
+底下網路設備運作在哪一層? Hub, switch, router, L4-switch, proxy
+hub是在實體層 (Physical Layer)
+網絡交換機可以在OSI第 2 層（數據鏈路層）或第 3 層（網絡層）運行
+路由器運行在 OSI 模型的第三層
+OSI 模型的第 4 層協調系統之間的通信
+POXY 會議層 Session Layer
+
+TCP/IP有那些層?
+Application Layer（應用層）
+Transport Layer（傳輸層）
+Internet Layer（網際網路層、網路層）
+Network Access Layer（網路存取層）
+寫出與OSI七層模型的對應
+Application Layer 對應Application Layer,Presentation Layer,Session Layer, 
+Transport Layer對應Transport Layer
+Internet Layer對應Network Layer
+Network Access Layer對應Data Link Layer,Physical Layer 
+
+簡述底下應用層協定(英文全名與簡單功能說明):
+HTTP vs HTTPs
+HTTPS 全名 超文本傳輸安全協定，那個 S 就是 Secure 的意思；
+HTTPS 透過 HTTP 進行通訊，但通訊過程使用 SSL/TLS 進行加密，藉由類似於前述的加密方式，在 HTTP 之上定義了相對安全的資料傳輸方法。
+HyperText Transfer Protocol (超文本傳輸協定):是一種用於分佈式、協作式和超媒體訊息系統的應用層協定。HTTP是全球資訊網的數據通信的基礎。
+
+DNS vs DNSsec
+DNS提供給DNS客戶端（解析器）的DNS資料來源進行認證，並驗證不存在性和校驗資料完整性驗證，但不提供機密性和可用性
+DNSsec是Internet工程任務組 （IETF）的對確保由域名系統 （DNS）中提供的關於網際網路協定（IP）網路使用特定類型的資訊規格套件
+telnet vs ssh
+SSH 是一種廣泛用於遠程訪問和管理設備的網絡協議。SSH 的完整形式是 Secure Shell 是通過 Internet 訪問網絡設備和服務器的主要協議
+Telnet 是用於虛擬終端服務的標準 TCP/IP 協議
+
+ftp vs sftp
+支持FTP協議的伺服器就是FTP伺服器
+相當於加密版的FTP
+
+smtp, pop3
+POP3是指收信
+SMTP是指發信。
+
+SNMP
+該協議是一組用於與 TCP/IP 網絡中的設備進行通信的標準
+
+簡述底下傳輸層協定(英文全名與簡單功能說明):
+TCP vs UDP
+                        TCP                         vs                               UDP
+可靠性                  可靠                                                         不可靠
+速度                    慢                                                             快
+傳輸方式          封包按順序傳輸                                                  封包以串流方式傳輸
+錯誤檢查與修正           有                                                             無
+壅塞控制                 有                                                             無
+確認                     有                                                           只有檢查碼
+適用服務    要求可靠傳輸的服務，例如電子郵件、網頁瀏覽、檔案傳輸                即時服務，例如串流媒體、網路電話、網路遊戲
+
+reliable(可靠的) vs unreliable(不可靠的)
+不可靠（Unreliable): 無法保證信息或數據包的抵達順序或因網絡環境的丟失但傳輸速度非常
+可靠（Reliable）:可以保證數據傳輸依然完好,數據包發送順序與抵達順序相同。
+
+TCP three-way handshaking(三項交握)
+三向交握 (Three-way Handshake)， 是其建立虛擬連線 (virtual connection) 的方式。
+又稱為 三向式握手、三路交握 …，其實就是 三次訊息的交換。
+
+TCP syn flood attack
+使用者端透過傳送SYN同步（synchronize）資訊到伺服器要求建立連線。
+
+簡述底下網路層協定(英文全名與簡單功能說明):
+IP:Internet Protocol Address(網際協定位址)是網際協定中用於標識傳送或接收資料報的裝置的一串數字。
+ICMP:Internet Control Message Protocol(網際控制訊息協定:在主機與路由器之間傳遞控制信息).
